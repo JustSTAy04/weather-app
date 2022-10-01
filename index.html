@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Weather</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <script
+      src="https://kit.fontawesome.com/5f4f527f42.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row main-row">
+        <div class="col-9 main-info">
+          <div class="row horl">
+            <form>
+              <input type="text" placeholder="Enter a city" class="enter" />
+              <button type="submit" class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+              <button class="location">
+                <i class="fa-solid fa-location-dot"></i>
+              </button>
+            </form>
+            <div class="col-7">
+              <h1 id="city">New York</h1>
+              <h1 class="temp">
+                <i class="fa-solid fa-cloud-sun" id="weatherNow"></i
+                ><span id="temperatureNow">32</span><span id="deg">°C</span>
+              </h1>
+            </div>
+            <div class="col col-info">
+              <p>Humidity: <span id="humidity">53</span>%</p>
+              <p>Wind: <span id="wind">10</span>m/s</p>
+            </div>
+          </div>
+          <div class="row row-info">
+            <div class="col info">
+              <p class="weekDay">Sat</p>
+              <i class="fa-solid fa-sun weather"></i>
+              <p><span id="temperatureMax">32</span><span id="deg">°C</span></p>
+              <p><span id="temperatureMin">19</span><span id="deg">°C</span></p>
+            </div>
+            <div class="col info">
+              <p class="weekDay">Sun</p>
+              <i class="fa-solid fa-cloud-sun weather"></i>
+              <p><span id="temperatureMax">28</span><span id="deg">°C</span></p>
+              <p><span id="temperatureMin">13</span><span id="deg">°C</span></p>
+            </div>
+            <div class="col info">
+              <p class="weekDay">Mon</p>
+              <i class="fa-solid fa-cloud weather"></i>
+              <p><span id="temperatureMax">27</span><span id="deg">°C</span></p>
+              <p><span id="temperatureMin">11</span><span id="deg">°C</span></p>
+            </div>
+            <div class="col info">
+              <p class="weekDay">Tue</p>
+              <i class="fa-solid fa-cloud-rain weather"></i>
+              <p><span id="temperatureMax">33</span><span id="deg">°C</span></p>
+              <p><span id="temperatureMin">19</span><span id="deg">°C</span></p>
+            </div>
+            <div class="col info">
+              <p class="weekDay">Wed</p>
+              <i class="fa-solid fa-cloud-bolt weather"></i>
+              <p><span id="temperatureMax">29</span><span id="deg">°C</span></p>
+              <p><span id="temperatureMin">18</span><span id="deg">°C</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="col sec-col">
+          <div class="row time">
+            <h1 id="day">21/07</h1>
+            <h2 id="weekDay">Thu</h2>
+            <h2 id="time">21:16</h2>
+          </div>
+          <div class="row cities">
+            <p>New York</p>
+            <p>Lisbon</p>
+            <p>Paris</p>
+            <p>Washington</p>
+            <p>Kyiv</p>
+            <p>San Diego</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
