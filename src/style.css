@@ -86,3 +86,7 @@ p {
   font-weight: bold;
   font-size: 14px;
 }
+.link {
+  text-align: center;
+  color: RGB(105, 120, 207);
+}
